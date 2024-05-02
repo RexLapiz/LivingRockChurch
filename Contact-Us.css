@@ -1,0 +1,167 @@
+body, html {
+    height: 100%;
+    margin: 0px;
+}
+
+#logo img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+
+}
+
+
+#header {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr)
+    grid-row: 1;
+    width: 100%; /* Ensure full width */
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+#header-links {
+    grid-area: 5 / 4 / 3 / 11;
+    font-family: "Agdasima", sans-serif;
+    align-items: center;
+}
+
+.LRC, .read_the_bible, .news, .church_service, .about_us {
+    font-size: 20px; /* Adjust the font size as needed */
+    margin-right: 20px; /* Adjust the spacing between links as needed */
+}
+
+.vertical-line {
+    height: 20px; /* Adjust the height of the vertical line as needed */
+    border-left: 1px solid #000; /* Adjust the style of the vertical line as needed */
+    margin: 0 10px; /* Adjust the spacing around the vertical line as needed */
+}
+.container_about_church {
+  
+    display: grid;
+    grid-auto-rows: 100px;
+    grid-auto-columns: 100px;
+    grid-template-rows: repeat(10, 100px);
+    grid-template-columns: repeat(10, 1fr); /* Divide into 10 equal columns */
+    position: absolute;
+    width: 100%;
+    background-color: rgb(27, 175, 106);
+  }
+  .about_church {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    grid-area: 1 / 1 / 2 / -1;
+    z-index: 1;
+    position:static;
+  }
+  .about_church img {
+    position:absolute;
+  }
+  .about_church .links{
+    margin-top: 3%;
+    margin-left: 10%;
+  }
+  .introduction_pastor  {
+    grid-area: 2 / 1 / -1 / 11;
+    background-color: #ffffff;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 1);
+  
+  }
+  .Mission {
+    color:rgb(83, 83, 83);
+    grid-area: 1 / 1 / 1 / -1;
+    margin-top: 10%;
+    justify-self: center;
+  }
+  .about_church img {
+    width: 100px;
+    height: auto;
+  }  
+  .styled-table {
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-collapse: collapse;
+    
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+button {
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 35%;
+    width: 500px;
+}
+/* Modal styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.Facebook img{
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 35%;
+    width: 50px;
+    height: auto;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Us</title>
+    <link rel="stylesheet" href="Contact-Us.css">
+</head>
+<body>
+
+    <div class="container_about_church">
+        <div class="about_church">
+            <img src="Living Rock.png" alt="Living Rock Church Logo">
+            <div class="links">
+                <span class="LRC"><a href="Homepage.html" style="color: #F2AA4CFF; text-decoration: none;">LIVING ROCK CHURCH  </a></span>
+                <span class="vertical-line"></span>
+                <span class="read_the_bible"><a href="Bible.html" style="color: #F2AA4CFF; text-decoration: none;">READ THE BIBLE</a></span>
+                <span class="news"><a href="News.html" style="color: #F2AA4CFF; text-decoration: none;">GALLERY</a></span>
+
+            </div>
+
+        </div>
+    
+    <div class="introduction_pastor">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Position</th>
+                    <th>Name</th>
+                    <th>Contact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pastor</td>
+                    <td>Jonathan Montes</td>
+                    <td>Private</td>
+                </tr>
+                <tr class="active-row">
+                    <td>1st Lady</td>
+                    <td>Nancy Montes</td>
+                    <td>Private</td>
+                </tr>
+                <tr>
+                    <td>Church Leader</td>
+                    <td>Reyna Nival</td>
+                    <td>Private</td>
+                </tr>
+                <!-- and so on... -->
+            </tbody>
+        </table>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Activity</th>
+                    <th>Time</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>Sunday Worship</td>
+                    <td>Every Sunday</td>
+                    <td>Church</td>
+                </tr>
+                <tr class="active-row">
+                    <td></td>
+                    <td>Fellowship</td>
+                    <td>Every Wednesday</td>
+                    <td>Depends</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Bible Study</td>
+                    <td>Every Friday</td>
+                    <td>Church</td>
+                </tr>
+                <!-- and so on... -->
+            </tbody>
+        </table>
+
+
+
+        <button id="Support-Us"><img src="Support-us.jpg" style="width: 10%; height: auto;"></button>
+        <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1>Tithes</h1>
+                    <form action="submit_form.php" method="post">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+                        <label>Gender:</label>
+                        <input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label><br><br>
+                        <label for="event">Select Payment:</label>
+                        <select id="event" name="event">
+                            <option value="Gcash">Gcash(Just a prototype)</option>
+                            <option value="Paymaya">PayMaya(Just a prototype)</option>
+                            <option value="Paypal">Paypal(Just a prototype)</option>
+                        </select><br><br>
+                        <label for="Message to the Church">Message To Our Church:</label>
+                        <textarea id="additionalInfo" name="additionalInfo" rows="4" cols="50"></textarea><br><br>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </form>
+                </div>
+            </div>
+        <div class="Facebook">
+            <a href="https://www.facebook.com/profile.php?id=100070822953242"><img src="Facebook.jpg"></a><p> Soon Other links too</p>
+        </div>
+    </div>
+    <script src="Contact-Us.js"></script>
+</body>
+</html>

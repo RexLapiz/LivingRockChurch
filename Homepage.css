@@ -1,0 +1,225 @@
+
+body, html {
+  height: 100%;
+  margin: 0px;
+}
+.main_container {
+  border-top-left-radius: 50%;
+  position: relative;
+  height: 700px;
+}
+.background-video {
+  border-top-left-radius: 50% ;
+
+  position: absolute;
+  background-position: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1; /* Ensure it's behind other content */
+}
+
+#logo img{
+  width: 70px;
+  height: auto;
+  position: absolute;
+  left: .8%;
+  top: -10px;
+  z-index: -1;
+} 
+
+
+                         /* Fonts */
+@font-face {
+    font-family: 'Stalemate';
+    src: url('Stalemate-Regular.ttf') format('truetype');
+  }
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('EBGaramond-VariableFont_wght.ttf') format('truetype');
+}
+.agdasima-regular {
+  font-family: "Agdasima", sans-serif;
+  color: white;
+  display: inline;
+}
+.Stalemate {
+    font-family: 'Stalemate';
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+  }
+.Garamond {
+    font-family: 'EB Garamond';
+    color: rgb(179, 163, 152);
+    font-size: 20px;
+    margin-right: 10px;
+    padding: 10px;
+}
+/* HEADER */
+.header {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  z-index: 10;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.header {
+  margin-top: 1%;
+}
+.header span {
+
+  padding-left: 7.5%;
+}
+#header-links{
+  
+  font-family: "Agdasima", sans-serif;
+}
+  /* Responsive Header (CHANGE IN JAVASCRIPT LATER, MAKE A SIDERBAR.) */
+@media (max-width: 1191px){
+  #header-links .read_the_bible ,#header-links .news ,#header-links .church_service ,#header-links .about_us{
+    display: flex;
+    margin-left: 3%
+  }
+  #header-links .LRC {
+    margin-left: 3%;
+  }
+}
+@media (max-width: 816px){
+  #header-links .read_the_bible ,#header-links .news ,#header-links .church_service ,#header-links .about_us{
+    display: flex;
+    margin-left: 5%
+  }
+  #header-links .LRC {
+    margin-left: 5%;
+  }
+}
+@media (max-width: 625px){
+  #header-links .read_the_bible ,#header-links .news ,#header-links .church_service ,#header-links .about_us{
+    display: flex;
+    margin-left: 8%
+  }
+  #header-links .LRC {
+    margin-left: 8%;
+  }
+}
+/* Header Links CSS */
+.LRC, .read_the_bible, .news, .church_service, .about_us {
+
+  font-size: 30px;
+  color: #F2AA4CFF;
+  display: inline;
+}
+
+/* DESIGNS */
+.vertical-line {
+  margin-left: 20px;
+  top: 10;
+  position: absolute;
+  width: 0; /* Set width to 0 */
+  height: 35px; /* Adjust height as needed */
+  border-left: 2px solid white; /* Set border-left to create the line */
+}
+@media (max-width: 1191px) {
+  .vertical-line {
+    height: 45px;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #7b7b7b; 
+  border-radius: 5px; 
+}
+body::-webkit-scrollbar-track {
+  background-color: #4b4b4b;
+}
+
+/* Verses */
+.verse {
+  font-family: 'Stalemate';
+  font-size: 28px;
+  letter-spacing: 3px;
+  border-radius: 150px;
+  float: left;
+  margin-left: 8%;
+  margin-top: 4%;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: rgba(53, 71, 121, 0.3);
+  color: white;
+  height: 50%;
+  width: 50%;
+  text-align:center;
+  opacity: .1;
+  transition: opacity 0.5s ease, border-radius 0.5s ease;
+}
+.verse:hover {
+  transition-duration: 2s;
+  border-radius: 400px;
+  opacity: 1;
+}
+/* Finished*/
+
+
+
+
+
+
+/* Use Grid! */
+/* ONGOING */
+.container_about_church {
+  
+  display: grid;
+  grid-auto-rows: 100px;
+  grid-auto-columns: 100px;
+  grid-template-rows: repeat(2, 300px);
+  grid-template-columns: repeat(10, 1fr); /* Divide into 10 equal columns */
+  position: absolute;
+  width: 100%;
+  top: -30px;
+  background-color: rgb(27, 175, 106);
+}
+.about_church {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  color:rgb(255, 255, 255);
+  justify-self: center;
+  align-self: center;
+  grid-area: 1 / 2 / 2 / 7;
+  z-index: 1;
+}
+.introduction_pastor  {
+  grid-area: 2 / 4 / 5 / -1;
+  background-color: #ffffff;
+  border-top-left-radius: 5%;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 1);
+
+}
+.Mission {
+  color:rgb(83, 83, 83);
+  grid-area: 2 / 5 / 4 / -1;
+  margin-top: 10%;
+  justify-self: center;
+
+}
+.about_us_gradient {  
+  top: 1280px;
+  height: 200px;
+  background-color: black; /* For browsers that do not support gradients */
+  background-image: linear-gradient(black, grey);
+}
